@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSqlRules", "TSqlRules\TSqlRules.csproj", "{5EB76FFD-8DA3-4CBF-97BB-7407955F6E43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSqlRules.Test", "TSqlRules.Test\TSqlRules.Test.csproj", "{14B962D1-9F6D-495C-8953-296F6319ADF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TsqlRules.ConsoleApp", "TsqlRules.ConsoleApp\TsqlRules.ConsoleApp.csproj", "{B9AF0939-39BC-4727-88C7-8A70DC67CAC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EB76FFD-8DA3-4CBF-97BB-7407955F6E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB76FFD-8DA3-4CBF-97BB-7407955F6E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB76FFD-8DA3-4CBF-97BB-7407955F6E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB76FFD-8DA3-4CBF-97BB-7407955F6E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B962D1-9F6D-495C-8953-296F6319ADF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B962D1-9F6D-495C-8953-296F6319ADF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B962D1-9F6D-495C-8953-296F6319ADF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B962D1-9F6D-495C-8953-296F6319ADF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AF0939-39BC-4727-88C7-8A70DC67CAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AF0939-39BC-4727-88C7-8A70DC67CAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AF0939-39BC-4727-88C7-8A70DC67CAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AF0939-39BC-4727-88C7-8A70DC67CAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+﻿Notes on writing TSQL Rules:
+https://msdn.microsoft.com/en-us/library/dn632173(v=vs.103).aspx
+https://msdn.microsoft.com/en-us/library/dn632175(v=vs.103).aspx
+
+Build and Deploy:
+https://msdn.microsoft.com/en-us/library/dn642152(v=vs.103).aspx
+https://msdn.microsoft.com/en-us/library/dn268597(v=vs.103).aspx
+
+
+Signed Package using: ashley.  PLEASE CHANGE THIS IF YOU ARE USING!!
