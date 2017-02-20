@@ -1,6 +1,8 @@
 # TSqlRules
 TSQL Static Code Analysis Rules for SQL Server
 
+![alt text](https://aleefncinc.visualstudio.com/_apis/public/build/definitions/c2c2dfd2-e9c4-472e-8ffb-e45f661e5dbf/2/badge "Build Info")
+
 ## Project Description
 This library extends the SSDT (SQL Server Data Tools) functionality for creating static code analysis rules for Database Projects.  The TSqlRules DLL can be added to Visual Studio to display errors and warnings inside the "Error List" window and can also be used with MSBuild.
 
@@ -10,15 +12,16 @@ Based on functionality described here:
 * [ScriptDom Namespace](https://technet.microsoft.com/en-us/library/microsoft.sqlserver.transactsql.scriptdom(v=sql.110).aspx)
 
 ## Usage Notes
-The following references need to be updated if you are running different verions of Visual Studio.  Currently they are configured to reference Visual Studio 2015 installation path.
+The following references need to be updated if you are running different verions of Visual Studio.  Currently they are configured for Visual Studio 2015 and are included in a Library folder to allow this to build.  SSDT installs those DLL in the below referenced paths.
 * Microsoft.Data.Tools.Schema.Sql.dll
 * Microsoft.Data.Tools.Utilities.dll
 * Microsoft.SqlServer.Dac.dll
 * Microsoft.SqlServer.Dac.Extensions.dll
 * Microsoft.SqlServer.TransactSql.ScriptDom.dll
 
-Visual Studio 2013: 
+Visual Studio 2013:
 * C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\120\
+* C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies
 
 Visual Studio 2015:
 * C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\
