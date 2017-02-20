@@ -1,7 +1,7 @@
 # TSqlRules
 TSQL Static Code Analysis Rules for SQL Server
 
-![alt text](https://aleefncinc.visualstudio.com/_apis/public/build/definitions/c2c2dfd2-e9c4-472e-8ffb-e45f661e5dbf/2/badge "Build Info")
+![alt text](https://ashleyglee.visualstudio.com/_apis/public/build/definitions/3885efb0-fffb-4099-a142-12834cd01ca9/1/badge "Build Info")
 
 ## Project Description
 This library extends the SSDT (SQL Server Data Tools) functionality for creating static code analysis rules for Database Projects.  The TSqlRules DLL can be added to Visual Studio to display errors and warnings inside the "Error List" window and can also be used with MSBuild.
