@@ -25,10 +25,10 @@ Visual Studio 2015:
 
 Note: the path you copy the new rules DLL and PDB file to need to match the directory above for your VS version.
 
-If you are adding as an extension to Visual Studio, the assembly needs to be signed.  Please sign the key with a different value than the one included in the Notes.txt file.
+If you are adding as an extension to Visual Studio, the assembly needs to be signed.
 * Right-click the TSqlRules project and select Properties.
 * Click the Signing menu.
-* Ensure the "Sign the Assembly" box is checked.
-* Click "Change password" and use a new password.
+* Check the "Sign the Assembly" box is checked.
+* In the **Choose a strong name key file** box, choose **<Browse…>**, and then navigate to the key file. To create a new key file, choose **<New…>** and enter its name in the **Create Strong Name Key** dialog box.
 * On the File menu, click Save All.
 * On the Build menu, click Build Solution.
