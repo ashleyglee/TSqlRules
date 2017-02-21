@@ -17,7 +17,7 @@ namespace TsqlRules.ConsoleApp
             {
                 switch (args[i])
                 {
-                    case "-S":
+                    case "-s":
                         Server = args[i + 1];
                         break;
                     case "-d":
@@ -31,9 +31,6 @@ namespace TsqlRules.ConsoleApp
                         break;
                 }
             }
-
-            DacPac = @"C:\Users\ashleyglee\Desktop\Development\SqlRulesDbProject\DbTest\DbTest\bin\Debug\DbTest.dacpac";
-            OutFile = @"C:\Users\ashleyglee\Desktop\Development\SqlRulesDbProject\DbTest\DbTest\bin\Debug\out.txt";
 
             SqlAnalysis sqlAnalysis = new SqlAnalysis();
             if (DacPac.Equals(""))

@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text.RegularExpressions;
 using TSqlRules.Visitors;
 
 namespace TSqlRules.Rules.Naming
@@ -13,15 +12,15 @@ namespace TSqlRules.Rules.Naming
     [LocalizedExportCodeAnalysisRule(
         RuleId,
         RuleConstants.ResourceBaseName,
-        RuleConstants.SRN0002_RuleName,
-        RuleConstants.SRN0002_ProblemDescription,
+        RuleConstants.SRN0007_RuleName,
+        RuleConstants.SRN0007_ProblemDescription,
         Category = RuleConstants.CategoryNaming,
         RuleScope = SqlRuleScope.Element),]
-    public class AlphaNumericColumnRule : SqlCodeAnalysisRule
+    public class TableNameContainingViewRule : SqlCodeAnalysisRule
     {
-        public const string RuleId = "TSQL.Naming.SRN0002";
+        public const string RuleId = "TSQL.Naming.SRN0007";
 
-        public AlphaNumericColumnRule()
+        public TableNameContainingViewRule()
         {
             // This rule supports Tables. Only those objects will be passed to the Analyze method
             SupportedElementTypes = new[]
@@ -32,8 +31,6 @@ namespace TSqlRules.Rules.Naming
 
         public override IList<SqlRuleProblem> Analyze(SqlRuleExecutionContext ruleExecutionContext)
         {
-            IList<SqlRuleProblem> problems = new List<SqlRuleProblem>();
-
             TSqlFragment fragment = ruleExecutionContext.ScriptFragment;
             RuleDescriptor ruleDescriptor = ruleExecutionContext.RuleDescriptor;
 
@@ -43,12 +40,9 @@ namespace TSqlRules.Rules.Naming
             CreateTableStatementVisitor visitor = new CreateTableStatementVisitor();
             fragment.Accept(visitor);
 
-            // Begin with alpha character. Only contain alphanumeric.
-            Regex regex = new Regex(@"^[A-Z][a-zA-Z0-9]*$");
-
             return (
                 from table in visitor.Nodes
-                where table.Definition.ColumnDefinitions.Any(x => !regex.IsMatch(x.ColumnIdentifier.Value))
+                where table.SchemaObjectName.BaseIdentifier.Value.ToUpper().Contains("VIEW")
                 select new SqlRuleProblem(String.Format(CultureInfo.CurrentCulture, ruleDescriptor.DisplayDescription, elementName), modelElement)
             ).ToList();
         }

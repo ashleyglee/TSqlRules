@@ -61,60 +61,6 @@ namespace TSqlRules {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Non-alphanumeric Column name was found in {0}..
-        /// </summary>
-        internal static string AlphaNumericColumnRule_ProblemDescription {
-            get {
-                return ResourceManager.GetString("AlphaNumericColumnRule_ProblemDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Column Name does not meet naming convention.
-        /// </summary>
-        internal static string AlphaNumericColumnRule_RuleName {
-            get {
-                return ResourceManager.GetString("AlphaNumericColumnRule_RuleName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Non-alphanumeric Table name was found in {0}..
-        /// </summary>
-        internal static string AlphaNumericTableRule_ProblemDescription {
-            get {
-                return ResourceManager.GetString("AlphaNumericTableRule_ProblemDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Table does not meet naming convention.
-        /// </summary>
-        internal static string AlphaNumericTableRule_RuleName {
-            get {
-                return ResourceManager.GetString("AlphaNumericTableRule_RuleName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to WAITFOR DELAY statement was found in {0}..
-        /// </summary>
-        internal static string AvoidWaitForDelay_ProblemDescription {
-            get {
-                return ResourceManager.GetString("AvoidWaitForDelay_ProblemDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Avoid using WaitFor Delay statements in stored procedures, functions and triggers..
-        /// </summary>
-        internal static string AvoidWaitForDelay_RuleName {
-            get {
-                return ResourceManager.GetString("AvoidWaitForDelay_RuleName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Can&apos;t create ResourceManager for {0} from {1}..
         /// </summary>
         internal static string CannotCreateResourceManager {
@@ -124,92 +70,164 @@ namespace TSqlRules {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Non-alphanumeric Stored Procedure name was found in {0}..
-        /// </summary>
-        internal static string StoredProcedureNameRule_ProblemDescription {
-            get {
-                return ResourceManager.GetString("StoredProcedureNameRule_ProblemDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Stored Procedure does not meet naming guidelines.
-        /// </summary>
-        internal static string StoredProcedureNameRule_RuleName {
-            get {
-                return ResourceManager.GetString("StoredProcedureNameRule_RuleName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to No Primary Key was found in {0}..
         /// </summary>
-        internal static string TableHasPrimaryKey_ProblemDescription {
+        internal static string SRD0001_ProblemDescription {
             get {
-                return ResourceManager.GetString("TableHasPrimaryKey_ProblemDescription", resourceCulture);
+                return ResourceManager.GetString("SRD0001_ProblemDescription", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Table does not have Primary Key.
         /// </summary>
-        internal static string TableHasPrimaryKey_RuleName {
+        internal static string SRD0001_RuleName {
             get {
-                return ResourceManager.GetString("TableHasPrimaryKey_RuleName", resourceCulture);
+                return ResourceManager.GetString("SRD0001_RuleName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Non-alphanumeric Trigger name was found in {0}..
+        ///   Looks up a localized string similar to Non-alphanumeric Table name was found in {0}..
         /// </summary>
-        internal static string TriggerNameRule_ProblemDescription {
+        internal static string SRN0001_ProblemDescription {
             get {
-                return ResourceManager.GetString("TriggerNameRule_ProblemDescription", resourceCulture);
+                return ResourceManager.GetString("SRN0001_ProblemDescription", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trigger does not meet naming convention.
+        ///   Looks up a localized string similar to Table does not meet naming convention.
         /// </summary>
-        internal static string TriggerNameRule_RuleName {
+        internal static string SRN0001_RuleName {
             get {
-                return ResourceManager.GetString("TriggerNameRule_RuleName", resourceCulture);
+                return ResourceManager.GetString("SRN0001_RuleName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Non-alphanumeric User Function name was found in {0}..
+        ///   Looks up a localized string similar to Non-alphanumeric Column name was found in {0}..
         /// </summary>
-        internal static string UserFunctionNameRule_ProblemDescription {
+        internal static string SRN0002_ProblemDescription {
             get {
-                return ResourceManager.GetString("UserFunctionNameRule_ProblemDescription", resourceCulture);
+                return ResourceManager.GetString("SRN0002_ProblemDescription", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User Function does not meet naming convention.
+        ///   Looks up a localized string similar to Column Name does not meet naming convention.
         /// </summary>
-        internal static string UserFunctionNameRule_RuleName {
+        internal static string SRN0002_RuleName {
             get {
-                return ResourceManager.GetString("UserFunctionNameRule_RuleName", resourceCulture);
+                return ResourceManager.GetString("SRN0002_RuleName", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Non-alphanumeric View name was found in {0}..
         /// </summary>
-        internal static string ViewNameRule_ProblemDescription {
+        internal static string SRN0003_ProblemDescription {
             get {
-                return ResourceManager.GetString("ViewNameRule_ProblemDescription", resourceCulture);
+                return ResourceManager.GetString("SRN0003_ProblemDescription", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to View does not meet naming convention.
         /// </summary>
-        internal static string ViewNameRule_RuleName {
+        internal static string SRN0003_RuleName {
             get {
-                return ResourceManager.GetString("ViewNameRule_RuleName", resourceCulture);
+                return ResourceManager.GetString("SRN0003_RuleName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Non-alphanumeric Trigger name was found in {0}..
+        /// </summary>
+        internal static string SRN0004_ProblemDescription {
+            get {
+                return ResourceManager.GetString("SRN0004_ProblemDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trigger does not meet naming convention.
+        /// </summary>
+        internal static string SRN0004_RuleName {
+            get {
+                return ResourceManager.GetString("SRN0004_RuleName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Non-alphanumeric Stored Procedure name was found in {0}..
+        /// </summary>
+        internal static string SRN0005_ProblemDescription {
+            get {
+                return ResourceManager.GetString("SRN0005_ProblemDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stored Procedure does not meet naming guidelines.
+        /// </summary>
+        internal static string SRN0005_RuleName {
+            get {
+                return ResourceManager.GetString("SRN0005_RuleName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Non-alphanumeric User Function name was found in {0}..
+        /// </summary>
+        internal static string SRN0006_ProblemDescription {
+            get {
+                return ResourceManager.GetString("SRN0006_ProblemDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Function does not meet naming convention.
+        /// </summary>
+        internal static string SRN0006_RuleName {
+            get {
+                return ResourceManager.GetString("SRN0006_RuleName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The word VIEW was found in {0}..
+        /// </summary>
+        internal static string SRN0007_ProblemDescription {
+            get {
+                return ResourceManager.GetString("SRN0007_ProblemDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Avoid using view in table names..
+        /// </summary>
+        internal static string SRN0007_RuleName {
+            get {
+                return ResourceManager.GetString("SRN0007_RuleName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WAITFOR DELAY statement was found in {0}..
+        /// </summary>
+        internal static string SRP0001_ProblemDescription {
+            get {
+                return ResourceManager.GetString("SRP0001_ProblemDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Avoid using WaitFor Delay statements in stored procedures, functions and triggers..
+        /// </summary>
+        internal static string SRP0001_RuleName {
+            get {
+                return ResourceManager.GetString("SRP0001_RuleName", resourceCulture);
             }
         }
     }

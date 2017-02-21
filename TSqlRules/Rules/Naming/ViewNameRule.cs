@@ -13,8 +13,8 @@ namespace TSqlRules.Rules.Naming
     [LocalizedExportCodeAnalysisRule(
         RuleId,
         RuleConstants.ResourceBaseName,
-        RuleConstants.ViewNameRule_RuleName,
-        RuleConstants.ViewNameRule_ProblemDescription,
+        RuleConstants.SRN0003_RuleName,
+        RuleConstants.SRN0003_ProblemDescription,
         Category = RuleConstants.CategoryNaming,
         RuleScope = SqlRuleScope.Element),]
     public class ViewNameRule : SqlCodeAnalysisRule

@@ -16,8 +16,8 @@ namespace TSqlRules.Rules.Performance
     [LocalizedExportCodeAnalysisRule(
         RuleId,
         RuleConstants.ResourceBaseName,
-        RuleConstants.AvoidWaitForDelay_RuleName,
-        RuleConstants.AvoidWaitForDelay_ProblemDescription,
+        RuleConstants.SRP0001_RuleName,
+        RuleConstants.SRP0001_ProblemDescription,
         Category = RuleConstants.CategoryPerformance,
         RuleScope = SqlRuleScope.Element),]
     public sealed class AvoidWaitForDelayRule : SqlCodeAnalysisRule

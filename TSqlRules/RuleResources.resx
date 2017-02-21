@@ -117,55 +117,62 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AvoidWaitForDelay_RuleName" xml:space="preserve">
-    <value>Avoid using WaitFor Delay statements in stored procedures, functions and triggers.</value>
-  </data>
-  <data name="AvoidWaitForDelay_ProblemDescription" xml:space="preserve">
-    <value>WAITFOR DELAY statement was found in {0}.</value>
-  </data>
-  <data name="TableHasPrimaryKey_RuleName" xml:space="preserve">
-    <value>Table does not have Primary Key</value>
-  </data>
-  <data name="TableHasPrimaryKey_ProblemDescription" xml:space="preserve">
-    <value>No Primary Key was found in {0}.</value>
-  </data>
-  <data name="AlphaNumericTableRule_RuleName" xml:space="preserve">
-    <value>Table does not meet naming convention</value>
-  </data>
-  <data name="AlphaNumericTableRule_ProblemDescription" xml:space="preserve">
-    <value>Non-alphanumeric Table name was found in {0}.</value>
-  </data>
-  <data name="AlphaNumericColumnRule_RuleName" xml:space="preserve">
-    <value>Column Name does not meet naming convention</value>
-  </data>
-  <data name="AlphaNumericColumnRule_ProblemDescription" xml:space="preserve">
-    <value>Non-alphanumeric Column name was found in {0}.</value>
-  </data>
-  <data name="StoredProcedureNameRule_RuleName" xml:space="preserve">
-    <value>Stored Procedure does not meet naming guidelines</value>
-  </data>
-  <data name="StoredProcedureNameRule_ProblemDescription" xml:space="preserve">
-    <value>Non-alphanumeric Stored Procedure name was found in {0}.</value>
-  </data>
-  <data name="UserFunctionNameRule_RuleName" xml:space="preserve">
-    <value>User Function does not meet naming convention</value>
-  </data>
-  <data name="UserFunctionNameRule_ProblemDescription" xml:space="preserve">
-    <value>Non-alphanumeric User Function name was found in {0}.</value>
-  </data>
-  <data name="ViewNameRule_RuleName" xml:space="preserve">
-    <value>View does not meet naming convention</value>
-  </data>
-  <data name="ViewNameRule_ProblemDescription" xml:space="preserve">
-    <value>Non-alphanumeric View name was found in {0}.</value>
-  </data>
-  <data name="TriggerNameRule_RuleName" xml:space="preserve">
-    <value>Trigger does not meet naming convention</value>
-  </data>
-  <data name="TriggerNameRule_ProblemDescription" xml:space="preserve">
-    <value>Non-alphanumeric Trigger name was found in {0}.</value>
-  </data>
   <data name="CannotCreateResourceManager" xml:space="preserve">
     <value>Can't create ResourceManager for {0} from {1}.</value>
+  </data>
+
+  <data name="SRP0001_RuleName" xml:space="preserve">
+    <value>Avoid using WaitFor Delay statements in stored procedures, functions and triggers.</value>
+  </data>
+  <data name="SRP0001_ProblemDescription" xml:space="preserve">
+    <value>WAITFOR DELAY statement was found in {0}.</value>
+  </data>
+  <data name="SRD0001_RuleName" xml:space="preserve">
+    <value>Table does not have Primary Key</value>
+  </data>
+  <data name="SRD0001_ProblemDescription" xml:space="preserve">
+    <value>No Primary Key was found in {0}.</value>
+  </data>
+  <data name="SRN0001_RuleName" xml:space="preserve">
+    <value>Table does not meet naming convention</value>
+  </data>
+  <data name="SRN0001_ProblemDescription" xml:space="preserve">
+    <value>Non-alphanumeric Table name was found in {0}.</value>
+  </data>
+  <data name="SRN0002_RuleName" xml:space="preserve">
+    <value>Column Name does not meet naming convention</value>
+  </data>
+  <data name="SRN0002_ProblemDescription" xml:space="preserve">
+    <value>Non-alphanumeric Column name was found in {0}.</value>
+  </data>
+  <data name="SRN0005_RuleName" xml:space="preserve">
+    <value>Stored Procedure does not meet naming guidelines</value>
+  </data>
+  <data name="SRN0005_ProblemDescription" xml:space="preserve">
+    <value>Non-alphanumeric Stored Procedure name was found in {0}.</value>
+  </data>
+  <data name="SRN0006_RuleName" xml:space="preserve">
+    <value>User Function does not meet naming convention</value>
+  </data>
+  <data name="SRN0006_ProblemDescription" xml:space="preserve">
+    <value>Non-alphanumeric User Function name was found in {0}.</value>
+  </data>
+  <data name="SRN0003_RuleName" xml:space="preserve">
+    <value>View does not meet naming convention</value>
+  </data>
+  <data name="SRN0003_ProblemDescription" xml:space="preserve">
+    <value>Non-alphanumeric View name was found in {0}.</value>
+  </data>
+  <data name="SRN0004_RuleName" xml:space="preserve">
+    <value>Trigger does not meet naming convention</value>
+  </data>
+  <data name="SRN0004_ProblemDescription" xml:space="preserve">
+    <value>Non-alphanumeric Trigger name was found in {0}.</value>
+  </data>
+  <data name="SRN0007_RuleName" xml:space="preserve">
+    <value>Avoid using view in table names.</value>
+  </data>
+  <data name="SRN0007_ProblemDescription" xml:space="preserve">
+    <value>The word VIEW was found in {0}.</value>
   </data>
 </root>

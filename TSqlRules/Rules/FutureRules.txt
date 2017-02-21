@@ -1,0 +1,9 @@
+﻿
+
+SELECT FROM user function without using ORDER BY
+
+Named default contraints
+Named Primary Keys (fix current PK rule to not require name)
+
+
+https://github.com/red-gate/SQL-code-smells

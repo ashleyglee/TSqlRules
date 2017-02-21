@@ -30,7 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>MyRefKey.pfx</AssemblyOriginatorKeyFile>
@@ -82,6 +82,7 @@
     <Compile Include="Rules\Naming\AlphaNumericColumnRule.cs" />
     <Compile Include="Rules\Naming\AlphaNumericTableRule.cs" />
     <Compile Include="Rules\Naming\StoredProcedureNameRule.cs" />
+    <Compile Include="Rules\Naming\TableNameContainingViewRule.cs" />
     <Compile Include="Rules\Naming\TriggerNameRule.cs" />
     <Compile Include="Rules\Naming\UserFunctionNameRule.cs" />
     <Compile Include="Rules\Naming\ViewNameRule.cs" />
@@ -109,6 +110,7 @@
     <Content Include="Library\SQLDB\DAC\130\Microsoft.SqlServer.Dac.Extensions.dll" />
     <Content Include="Library\SQLDB\DAC\130\Microsoft.SqlServer.TransactSql.ScriptDom.dll" />
     <Content Include="Notes.txt" />
+    <Content Include="Rules\FutureRules.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MyRefKey.pfx" />

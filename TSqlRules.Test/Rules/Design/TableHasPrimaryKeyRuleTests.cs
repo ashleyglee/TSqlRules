@@ -20,7 +20,7 @@ namespace TSqlRules.Rules.Design.Tests
                 );";
             AddSqlToModel(sql);
 
-            // no exptected problems
+            // no expected problems
 
             // Act
             // Assert
@@ -68,5 +68,52 @@ namespace TSqlRules.Rules.Design.Tests
             RunSqlRuleTest(rulesToRun);
         }
 
+        [TestMethod]
+        public void TableHasPrimaryKey_Should_Pass_When_TempTable()
+        {
+            // Arrange
+            string sql = @"
+                CREATE PROCEDURE ProcWithTempTable
+                AS 
+                BEGIN
+                    CREATE TABLE #TestTable
+                    (
+                        [Column1] INT NOT NULL,
+                        [Column2] VARCHAR(20) NOT NULL
+                    );
+                END";
+            AddSqlToModel(sql);
+
+            // no expected problems
+
+            // Act
+            // Assert
+            var rulesToRun = new List<string>() { TableHasNamedPrimaryKeyRule.RuleId };
+            RunSqlRuleTest(rulesToRun);
+        }
+
+        [TestMethod]
+        public void TableHasPrimaryKey_Should_Pass_When_TableVariable()
+        {
+            // Arrange
+            string sql = @"
+                CREATE PROCEDURE ProcWithTableVariable
+                AS 
+                BEGIN
+                    DECLARE @TestTable TABLE
+                    (
+                        [Column1] INT NOT NULL,
+                        [Column2] VARCHAR(20) NOT NULL
+                    )
+                END";
+            AddSqlToModel(sql);
+
+            // no expected problems
+
+            // Act
+            // Assert
+            var rulesToRun = new List<string>() { TableHasNamedPrimaryKeyRule.RuleId };
+            RunSqlRuleTest(rulesToRun);
+        }
     }
 }

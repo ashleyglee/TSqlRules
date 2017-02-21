@@ -10,32 +10,32 @@
         /// <summary>
         /// Lookup name inside the resources file for the select asterisk rule name
         /// </summary>
-        public const string AvoidWaitForDelay_RuleName = "AvoidWaitForDelay_RuleName";
-        public const string TableHasPrimaryKey_RuleName = "TableHasPrimaryKey_RuleName";
-        public const string AlphaNumericTableRule_RuleName = "AlphaNumericTableRule_RuleName";
-        public const string AlphaNumericColumnRule_RuleName = "AlphaNumericColumnRule_RuleName";
-        public const string StoredProcedureNameRule_RuleName = "StoredProcedureNameRule_RuleName";
-        public const string UserFunctionNameRule_RuleName = "UserFunctionNameRule_RuleName";
-        public const string ViewNameRule_RuleName = "ViewNameRule_RuleName";
-        public const string TriggerNameRule_RuleName = "TriggerNameRule_RuleName";
-        public const string IndexSecondaryFileGroup_RuleName = "IndexSecondaryFileGroup_RuleName";
-        public const string IndexArchiveFileGroup_RuleName = "IndexArchiveFileGroup_RuleName";
-        //public const string _RuleName = "_RuleName";
+        public const string SRD0001_RuleName = "SRD0001_RuleName";
+
+        public const string SRN0001_RuleName = "SRN0001_RuleName";
+        public const string SRN0002_RuleName = "SRN0002_RuleName";
+        public const string SRN0003_RuleName = "SRN0003_RuleName";
+        public const string SRN0004_RuleName = "SRN0004_RuleName";
+        public const string SRN0005_RuleName = "SRN0005_RuleName";
+        public const string SRN0006_RuleName = "SRN0006_RuleName";
+        public const string SRN0007_RuleName = "SRN0007_RuleName";
+
+        public const string SRP0001_RuleName = "SRP0001_RuleName";
 
         /// <summary>
         /// Lookup ID inside the resources file for the select asterisk description
         /// </summary>
-        public const string AvoidWaitForDelay_ProblemDescription = "AvoidWaitForDelay_ProblemDescription";
-        public const string TableHasPrimaryKey_ProblemDescription = "TableHasPrimaryKey_ProblemDescription";
-        public const string AlphaNumericTableRule_ProblemDescription = "AlphaNumericTableRule_ProblemDescription";
-        public const string AlphaNumericColumnRule_ProblemDescription = "AlphaNumericColumnRule_ProblemDescription";
-        public const string StoredProcedureNameRule_ProblemDescription = "StoredProcedureNameRule_ProblemDescription";
-        public const string UserFunctionNameRule_ProblemDescription = "UserFunctionNameRule_ProblemDescription";
-        public const string ViewNameRule_ProblemDescription = "ViewNameRule_ProblemDescription";
-        public const string TriggerNameRule_ProblemDescription = "TriggerNameRule_ProblemDescription";
-        public const string IndexSecondaryFileGroup_ProblemDescription = "IndexSecondaryFileGroup_ProblemDescription";
-        public const string IndexArchiveFileGroup_ProblemDescription = "IndexArchiveFileGroup_ProblemDescription";
-        //public const string _ProblemDescription = "_ProblemDescription";
+        public const string SRD0001_ProblemDescription = "SRD0001_ProblemDescription";
+
+        public const string SRN0001_ProblemDescription = "SRN0001_ProblemDescription";
+        public const string SRN0002_ProblemDescription = "SRN0002_ProblemDescription";
+        public const string SRN0003_ProblemDescription = "SRN0003_ProblemDescription";
+        public const string SRN0004_ProblemDescription = "SRN0004_ProblemDescription";
+        public const string SRN0005_ProblemDescription = "SRN0005_ProblemDescription";
+        public const string SRN0006_ProblemDescription = "SRN0006_ProblemDescription";
+        public const string SRN0007_ProblemDescription = "SRN0007_ProblemDescription";
+
+        public const string SRP0001_ProblemDescription = "SRP0001_ProblemDescription";
 
         /// <summary>
         /// Categories (should not be localized)

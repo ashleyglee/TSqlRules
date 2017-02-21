@@ -13,8 +13,8 @@ namespace TSqlRules.Rules.Naming
     [LocalizedExportCodeAnalysisRule(
         RuleId,
         RuleConstants.ResourceBaseName,
-        RuleConstants.AlphaNumericTableRule_RuleName,
-        RuleConstants.AlphaNumericTableRule_ProblemDescription,
+        RuleConstants.SRN0001_RuleName,
+        RuleConstants.SRN0001_ProblemDescription,
         Category = RuleConstants.CategoryNaming,
         RuleScope = SqlRuleScope.Element),]
     public class AlphaNumericTableRule : SqlCodeAnalysisRule
@@ -43,12 +43,6 @@ namespace TSqlRules.Rules.Naming
 
             // Begin with alpha character
             Regex regex = new Regex(@"^[A-Z][a-zA-Z0-9]*$");
-
-            bool allowUnderscore = true;
-            if (allowUnderscore)
-            {
-                regex = new Regex(@"^[a-zA-Z][a-zA-Z0-9_]*$");
-            }
 
             return (
                 from table in visitor.Nodes

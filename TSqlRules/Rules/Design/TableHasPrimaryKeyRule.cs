@@ -12,8 +12,8 @@ namespace TSqlRules.Rules.Design
     [LocalizedExportCodeAnalysisRule(
         RuleId,
         RuleConstants.ResourceBaseName,
-        RuleConstants.TableHasPrimaryKey_RuleName,
-        RuleConstants.TableHasPrimaryKey_ProblemDescription,
+        RuleConstants.SRD0001_RuleName,
+        RuleConstants.SRD0001_ProblemDescription,
         Category = RuleConstants.CategoryDesign,
         RuleScope = SqlRuleScope.Element),]
     public class TableHasNamedPrimaryKeyRule : SqlCodeAnalysisRule
@@ -31,7 +31,8 @@ namespace TSqlRules.Rules.Design
             // This rule supports Tables. Only those objects will be passed to the Analyze method
             SupportedElementTypes = new[]
             {
-                Table.TypeClass
+                ModelSchema.Table,
+                ModelSchema.Procedure
             };
         }
 
@@ -43,8 +44,6 @@ namespace TSqlRules.Rules.Design
         /// <returns></returns>
         public override IList<SqlRuleProblem> Analyze(SqlRuleExecutionContext ruleExecutionContext)
         {
-            IList<SqlRuleProblem> problems = new List<SqlRuleProblem>();
-
             TSqlFragment fragment = ruleExecutionContext.ScriptFragment;
             RuleDescriptor ruleDescriptor = ruleExecutionContext.RuleDescriptor;
 
@@ -60,6 +59,25 @@ namespace TSqlRules.Rules.Design
                 where !isTemp && !table.Definition.TableConstraints.OfType<UniqueConstraintDefinition>().Any(x => x.IsPrimaryKey)
                 select new SqlRuleProblem(String.Format(CultureInfo.CurrentCulture, ruleDescriptor.DisplayDescription, elementName), modelElement)
             ).ToList();
+
+            //List<SqlRuleProblem> problems = new List<SqlRuleProblem>();
+            //TSqlObject sqlObj = ruleExecutionContext.ModelElement;
+            //if (sqlObj != null)
+            //{
+            //    if (sqlObj.Name != null && sqlObj.Name.Parts != null && sqlObj.Name.Parts.Any(x => x.StartsWith("#") || x.StartsWith("@")))
+            //    {
+            //        return problems;
+            //    }
+
+            //    var child = sqlObj.GetChildren(DacQueryScopes.All).FirstOrDefault(x => x.ObjectType == PrimaryKeyConstraint.TypeClass);
+            //    if (child == null)
+            //    {
+            //        string msg = string.Format(Message, RuleUtils.GetElementName(ruleExecutionContext, sqlObj));
+            //        problems.Add(new SqlRuleProblem(msg, sqlObj));
+            //    }
+            //}
+
+            //return problems;
         }
     }
 }
