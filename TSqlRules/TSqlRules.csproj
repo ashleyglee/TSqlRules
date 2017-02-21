@@ -30,10 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>MyRefKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>MyKeyRef.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <DelaySign>false</DelaySign>
@@ -113,9 +113,8 @@
     <Content Include="Rules\FutureRules.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MyRefKey.pfx" />
+    <None Include="MyKeyRef.pfx" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
